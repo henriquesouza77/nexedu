@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="assets/img/logo-256.png" width="96" alt="NexEdu"></p>
 <h1 align="center">NexEdu — Sistema Escolar e Acompanhamento Acadêmico</h1>
 
@@ -127,3 +128,6 @@ nexedu/
 O cadastro de aluno cria também seu usuário de acesso em uma transação. O perfil `responsavel` possui as mesmas leituras acadêmicas do aluno associado.
 
 Frequência é calculada a partir das chamadas registradas (`aulas[].presencas`), e a média é `(Atividade 1 + Atividade 2 + Avaliação) / 3`, com aprovação a partir de 6,0 e frequência mínima de 75%.
+=======
+# nexedu
+>>>>>>> ab8aacca16a2fb312b5576f88eb24ca2dbd366fd
