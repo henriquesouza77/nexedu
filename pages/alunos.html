@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alunos · NexEdu</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <main class="main">
+      <header class="topbar" id="topbar"></header>
+      <section class="content" id="content">
+        <div class="card">
+          <div class="card__header">
+            <div><h2>Lista de alunos</h2><p id="resumo">Carregando...</p></div>
+            <div class="toolbar">
+              <div class="search"><input class="input" type="search" id="busca" placeholder="Buscar por nome ou matrícula"></div>
+              <select class="select" id="fTurma"><option value="">Todas as turmas</option></select>
+              <select class="select" id="fSituacao">
+                <option value="">Todas as situações</option>
+                <option>Ativo</option><option>Inativo</option><option>Transferido</option><option>Concluído</option>
+              </select>
+              <button class="btn btn-primary" type="button" id="btnNovo" hidden>Novo aluno</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Matrícula</th><th>Nome</th><th>Turma</th><th>Curso</th><th>Frequência</th><th>Média</th><th>Situação</th><th class="t-right">Ações</th></tr></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/alunos.js"></script>
+</body>
+</html>

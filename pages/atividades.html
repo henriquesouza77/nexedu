@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividades · NexEdu</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <main class="main">
+      <header class="topbar" id="topbar"></header>
+      <section class="content" id="content">
+        <div class="card__header" style="margin-bottom:16px">
+          <div><h2>Atividades</h2><p id="atvResumo"></p></div>
+          <div class="toolbar">
+            <select class="select" id="fStatus"><option value="">Todos os status</option><option>Disponível</option><option>Em andamento</option><option>Encerrada</option></select>
+            <button class="btn btn-primary" id="btnNovaAtv" hidden>Nova atividade</button>
+          </div>
+        </div>
+        <div class="grid grid-3" id="atvGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/atividades.js"></script>
+</body>
+</html>

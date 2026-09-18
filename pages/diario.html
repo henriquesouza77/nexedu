@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário de classe · NexEdu</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <main class="main">
+      <header class="topbar" id="topbar"></header>
+      <section class="content" id="content">
+        <div class="card">
+          <div class="card__header">
+            <div><h2>Registro de aula</h2><p>Selecione a turma, a disciplina e a data para fazer a chamada.</p></div>
+            <div class="toolbar">
+              <select class="select" id="selTurma"></select>
+              <select class="select" id="selDisciplina"></select>
+              <input class="input" type="date" id="selData">
+            </div>
+          </div>
+          <div id="chamada"></div>
+        </div>
+        <div class="card">
+          <div class="card__header"><div><h2>Aulas registradas</h2><p>Histórico de aulas da disciplina selecionada.</p></div></div>
+          <div id="historico"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/diario.js"></script>
+</body>
+</html>

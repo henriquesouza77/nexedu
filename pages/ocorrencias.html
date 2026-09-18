@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocorrências · NexEdu</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <main class="main">
+      <header class="topbar" id="topbar"></header>
+      <section class="content" id="content">
+        <div class="card">
+          <div class="card__header">
+            <div><h2>Ocorrências registradas</h2><p id="ocoResumo"></p></div>
+            <div class="toolbar">
+              <select class="select" id="fCategoria"><option value="">Todas as categorias</option></select>
+              <select class="select" id="fSituacaoOco"><option value="">Todas as situações</option><option>Aberta</option><option>Em análise</option><option>Resolvida</option></select>
+              <button class="btn btn-primary" id="btnNovaOco" hidden>Registrar ocorrência</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Data</th><th>Aluno</th><th>Categoria</th><th>Descrição</th><th>Registrado por</th><th>Situação</th><th class="t-right">Ações</th></tr></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/ocorrencias.js"></script>
+</body>
+</html>
